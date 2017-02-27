@@ -17,7 +17,7 @@ class App extends Component {
 
       <div className="App">
 
-      home page - lean canavs needed to work out UPS and intergrate the payment
+      home page - lean canavs needed to work out UPS and intergrate the paymentn
       <br/>
       <br/>
       <Link to="/yourcar"> <Button type="primary">Start</Button></Link>

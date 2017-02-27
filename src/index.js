@@ -4,9 +4,15 @@ import App from './App';
 import './index.css';
 import 'antd/dist/antd.css';
 
+import {firebaseApp} from './firebase';
 
-
-
+firebaseApp.auth().onAuthStateChanged(user =>{
+  if(user){
+    console.log('a user has signed in or up', user);
+  }else{
+    console.log('user has signed out or still needs to sign in')
+  }
+});
 
 
 import YourCar from './components/YourCar';
